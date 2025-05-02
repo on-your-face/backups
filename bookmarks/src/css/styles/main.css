@@ -1,0 +1,125 @@
+.clock__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#clock {
+    font-family: "Lora-Regular";
+    font-size: 50px;
+    font-weight: bold;
+
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-clip: text;
+    color: transparent;
+}
+
+.main__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+}
+
+.main {
+    display: flex;
+    /* gap: 15px; */
+    padding: 5px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+#google-yandex-vk .main {
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+}
+
+@media (max-width: 1000px) {
+    #google-yandex-vk .main {
+        flex-direction: column;
+    }
+}
+
+#ai-instruments .main {
+    justify-content: center;
+}
+
+/* .container {
+    margin-right: 5px;
+} */
+
+.box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+    width: auto;
+}
+
+.box:last-child {
+    margin-bottom: 0;
+}
+
+.element {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(90deg, #697f884b, #685f5f3f);
+    border-radius: 7px;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+#main-general .element {
+    background: linear-gradient(90deg, #9578ca59, #685f5f3f);
+}
+
+#main-general .element.folder {
+    background: -webkit-linear-gradient(90deg, #000000, #000000, #268697); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(90deg, #000000, #000000, #268697); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.element.ghost {
+    background: none;
+    display: none;
+}
+
+.element svg {
+    width: 100%;
+    height: auto;
+}
+
+.element img {
+    width: 100%;
+    height: auto;
+}
+
+.element:hover {
+    opacity: 0.5;
+}
+
+@media (max-width: 1000px) {
+    .element:hover {
+        opacity: initial;
+    }
+
+    .anchor:hover {
+        opacity: initial;
+    }
+}
+
+@media (max-width: 510px) {
+    .clock__wrapper {
+        display: none;
+    }
+}

@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    user-select: none;
+    height: 100%;
+    background-color: black;
+    font-family: "OpenSans";
+}

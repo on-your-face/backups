@@ -1,0 +1,72 @@
+/* .hashtags .general {
+    justify-content: start;
+} */
+
+.hashtags .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    background: radial-gradient(circle, rgba(238, 174, 202, 0.315) 0%, rgba(148, 188, 233, 0.301) 100%);
+    padding: 10px;
+    border-radius: 10px;
+    gap: 10px 0px;
+}
+
+.hashtags .header {
+    width: 45px;
+    height: auto;
+}
+
+.hashtags .element {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3px;
+    margin-bottom: 3px;
+    opacity: 1;
+}
+
+.hashtags .element:last-child {
+    margin-bottom: 0;
+}
+
+.hashtags .tag {
+    background: #7e7e7e52;
+    margin: 0;
+    padding: 5px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: fit-content;
+    border-radius: 2px;
+    text-decoration: none;
+    color: white;
+    word-break: break-word;
+    margin: 0;
+}
+
+.hashtags .tag.anchor img {
+    width: 30px;
+    height: auto;
+}
+
+.hashtags .tag img {
+    width: 20px;
+    height: 20px;
+}
+
+.hashtags .tag:hover,
+#auto-hot-key__hashtags .tag:hover {
+    opacity: 0.5;
+}
+
+.tag span {
+    margin: 0;
+    line-height: 1.2;
+}

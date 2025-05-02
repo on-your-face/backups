@@ -1,0 +1,16 @@
+.nexeption {
+    margin: 15px;
+}
+
+.on-your-face {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+
+.on-your-face .box {
+    background: none;
+    padding: 0;
+}

@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}

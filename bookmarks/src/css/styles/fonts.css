@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "OpenSans";
+    src: url("../../fonts/OpenSans-Light.woff") format("woff"), url("../../fonts/OpenSans-Light.woff") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lora-Regular";
+    src: url("../../fonts/Lora-Regular.woff") format("woff"), url("../../fonts/Lora-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
