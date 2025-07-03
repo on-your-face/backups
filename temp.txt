@@ -1,0 +1,3 @@
+cd /d "h:\"
+
+yt-dlp -f "bv*+ba/b" --merge-output-format mp4 --continue --retries infinite --fragment-retries infinite --socket-timeout 120 --buffer-size 16M --no-part --verbose "https://www.youtube.com/watch?v=CIj-ZDSjZ2E"
