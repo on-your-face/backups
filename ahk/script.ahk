@@ -67,3 +67,27 @@ else
 Run, C:\Program Files\Mozilla Firefox\firefox.exe
 return
 ; firefox__run-end
+
+; tg_winactive
+
+<#z::
+; Проверка: актуален ли hwnd (существует ли такое окно)
+if telegram_hwnd && WinExist("ahk_id " . telegram_hwnd)
+{
+    WinActivate, ahk_id %telegram_hwnd%
+}
+else
+{
+    ; Если Telegram не найден или hwnd устарел
+    if !WinExist("ahk_exe Telegram.exe")
+    {
+        Run, C:\Users\user\AppData\Roaming\Telegram Desktop\Telegram.exe
+        WinWait, ahk_exe Telegram.exe
+    }
+
+    ; Обновляем hwnd и активируем
+    telegram_hwnd := WinExist("ahk_exe Telegram.exe")
+    if telegram_hwnd
+        WinActivate, ahk_id %telegram_hwnd%
+}
+return
